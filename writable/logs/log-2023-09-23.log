@@ -1,0 +1,587 @@
+ERROR - 2023-09-23 00:51:52 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 00:51:52 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3328091005980007', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 00:52:18 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 00:52:18 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3328091005980007', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 00:52:49 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 00:52:49 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3328091005980007', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 00:53:53 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 00:53:53 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3328091005980007', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 00:54:40 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('330216131100000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('330216131100000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 00:54:40 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3302161311000004', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 00:59:19 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('330216131100000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('330216131100000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 00:59:19 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3302161311000004', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 01:03:20 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('332809100598000...', '1')
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\LoginController->index()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#11 {main}
+CRITICAL - 2023-09-23 01:03:20 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `master_login2`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\LoginModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\LoginController.php(30): App\Models\LoginModel->checkLogin('3328091005980007', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:13:01 --> Allowed fields must be specified for model: "App\Models\InsertCeklistModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\InsertCeklistModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\InsertCeklistController.php(1685): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 01:17:41 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\TablePasienModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\Home.php(20): App\Models\TablePasienModel->getSemuaPasienData()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\TablePasienModel.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\Home.php(20): App\Models\TablePasienModel->getSemuaPasienData()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+CRITICAL - 2023-09-23 01:17:41 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `simrs`.`t_clinicalpathway`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\TablePasienModel.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(20): App\Models\TablePasienModel->getSemuaPasienData()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:20:59 --> Allowed fields must be specified for model: "App\Models\InsertCeklistModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\InsertCeklistModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\InsertCeklistController.php(1685): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:21:21 --> Undefined variable $biaya409
+in APPPATH\Controllers\DetailPasienController.php on line 4829.
+ 1 APPPATH\Controllers\DetailPasienController.php(4829): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biaya409', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 4829)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:39:36 --> Allowed fields must be specified for model: "App\Models\InsertCeklistModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\InsertCeklistModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\InsertCeklistController.php(1686): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:53:32 --> A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\total\total2.php on line 8.
+ 1 APPPATH\Views\total\total2.php(8): mysqli_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\total\\total2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('total/total2', [], true)
+ 5 APPPATH\Views\kelas3.php(282): view('total/total2')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\kelas3.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('kelas3', [], true)
+ 9 APPPATH\Views\detailpasien3.php(72): view('kelas3')
+10 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\detailpasien3.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+13 APPPATH\Controllers\DetailPasienController.php(4405): view('detailpasien3', [...])
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:53:58 --> A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\total\total8.php on line 8.
+ 1 APPPATH\Views\total\total8.php(8): mysqli_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\total\\total8.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('total/total8', [], true)
+ 5 APPPATH\Views\kelas3.php(759): view('total/total8')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\kelas3.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('kelas3', [], true)
+ 9 APPPATH\Views\detailpasien3.php(72): view('kelas3')
+10 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\detailpasien3.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+13 APPPATH\Controllers\DetailPasienController.php(4405): view('detailpasien3', [...])
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:54:32 --> A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\total\total39.php on line 8.
+ 1 APPPATH\Views\total\total39.php(8): mysqli_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\total\\total39.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('total/total39', [], true)
+ 5 APPPATH\Views\kelas3.php(3282): view('total/total39')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\kelas3.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('kelas3', [], true)
+ 9 APPPATH\Views\detailpasien3.php(72): view('kelas3')
+10 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\detailpasien3.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+13 APPPATH\Controllers\DetailPasienController.php(4405): view('detailpasien3', [...])
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 01:58:35 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\InsertCeklistController.php on line 1688
+in SYSTEMPATH\Model.php on line 708.
+ 1 APPPATH\Controllers\InsertCeklistController.php(1688): CodeIgniter\Model->insert('007', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 02:19:48 --> A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\total\total20.php on line 8.
+ 1 APPPATH\Views\total\total20.php(8): mysqli_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\total\\total20.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('total/total20', [], true)
+ 5 APPPATH\Views\kelas3.php(1770): view('total/total20')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\kelas3.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('kelas3', [], true)
+ 9 APPPATH\Views\detailpasien3.php(72): view('kelas3')
+10 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\detailpasien3.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+13 APPPATH\Controllers\DetailPasienController.php(4405): view('detailpasien3', [...])
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 02:20:26 --> A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\total\total21.php on line 8.
+ 1 APPPATH\Views\total\total21.php(8): mysqli_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\total\\total21.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('total/total21', [], true)
+ 5 APPPATH\Views\kelas3.php(1848): view('total/total21')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\kelas3.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('kelas3', [], true)
+ 9 APPPATH\Views\detailpasien3.php(72): view('kelas3')
+10 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\detailpasien3.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+13 APPPATH\Controllers\DetailPasienController.php(4405): view('detailpasien3', [...])
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-23 02:21:00 --> A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\total\total6.php on line 8.
+ 1 APPPATH\Views\total\total6.php(8): mysqli_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\total\\total6.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('total/total6', [], true)
+ 5 APPPATH\Views\kelas3.php(600): view('total/total6')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\kelas3.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('kelas3', [], true)
+ 9 APPPATH\Views\detailpasien3.php(72): view('kelas3')
+10 SYSTEMPATH\View\View.php(224): include('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Views\\detailpasien3.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+13 APPPATH\Controllers\DetailPasienController.php(4405): view('detailpasien3', [...])
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+ERROR - 2023-09-23 02:24:09 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('192.168.1.178', 'root', Object(SensitiveParameterValue), 'simrs', 3306, '', 0)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\DetailPasienModel.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\InsertCeklistController.php(1144): App\Models\DetailPasienModel->getDetailPasienData('007')
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Models\DetailPasienModel.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\app\Controllers\InsertCeklistController.php(1144): App\Models\DetailPasienModel->getDetailPasienData('007')
+#7 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+#8 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+#9 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\h...')
+#12 {main}
+CRITICAL - 2023-09-23 02:24:09 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `t_clinicalpathway`
+WHERE `NOMR` = :NOMR:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\DetailPasienModel.php(15): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\InsertCeklistController.php(1144): App\Models\DetailPasienModel->getDetailPasienData('007')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\InsertCeklistController->save3()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsertCeklistController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')

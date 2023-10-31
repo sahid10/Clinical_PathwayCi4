@@ -1,0 +1,201 @@
+CRITICAL - 2023-09-29 01:16:26 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\detailpasien3.php on line 74.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 01:19:58 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 01:20:05 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 80.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 01:22:38 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 81.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 01:37:52 --> Too few arguments to function App\Controllers\DetailPasienController::detailpasien3(), 0 passed in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\DetailPasienController.php on line 4982.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->detailpasien3()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 01:38:13 --> Too few arguments to function App\Controllers\DetailPasienController::detailpasien3(), 0 passed in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\DetailPasienController.php on line 4982.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->detailpasien3()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 01:39:13 --> Too few arguments to function App\Controllers\DetailPasienController::detailpasien3(), 0 passed in C:\xampp8.2.4\htdocs\Clinicalpathway_Ci4\vendor\codeigniter4\framework\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\DetailPasienController.php on line 4982.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->detailpasien3()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:40:15 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 83.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:40:47 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 83.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:45:19 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 83.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:46:40 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 83.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:56:07 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 85.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:56:12 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 85.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 02:56:37 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 85.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:03:27 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 84.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:04:42 --> syntax error, unexpected token "else"
+in APPPATH\Views\detailpasien3.php on line 84.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:12:13 --> syntax error, unexpected token "if", expecting ":"
+in APPPATH\Views\detailpasien3.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:15:08 --> syntax error, unexpected token "if", expecting ":"
+in APPPATH\Views\detailpasien3.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:20:58 --> syntax error, unexpected token "if", expecting ":"
+in APPPATH\Views\detailpasien3.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:32:12 --> syntax error, unexpected token "if", expecting ":"
+in APPPATH\Views\detailpasien3.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-29 03:43:32 --> syntax error, unexpected token "if", expecting ":"
+in APPPATH\Views\detailpasien3.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('detailpasien3', [], true)
+ 3 APPPATH\Controllers\DetailPasienController.php(4412): view('detailpasien3', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')

@@ -1,0 +1,202 @@
+CRITICAL - 2023-09-20 02:56:05 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:03:32 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:03:39 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:06:37 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:06:44 --> Undefined variable $biaya409
+in APPPATH\Controllers\DetailPasienController.php on line 4836.
+ 1 APPPATH\Controllers\DetailPasienController.php(4836): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biaya409', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 4836)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:06:48 --> Undefined variable $biaya409
+in APPPATH\Controllers\DetailPasienController.php on line 4836.
+ 1 APPPATH\Controllers\DetailPasienController.php(4836): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biaya409', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 4836)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:07:10 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 2038.
+ 1 APPPATH\Controllers\DetailPasienController.php(2038): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 2038)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:07:17 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 388.
+ 1 APPPATH\Controllers\DetailPasienController.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas1()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:07:30 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:07:37 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 388.
+ 1 APPPATH\Controllers\DetailPasienController.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas1()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:08:49 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:09:51 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:13:32 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:14:42 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 388.
+ 1 APPPATH\Controllers\DetailPasienController.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 388)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas1()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:14:50 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:22:35 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:23:34 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:46:27 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:46:32 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:46:38 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:46:53 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:48:50 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 3688.
+ 1 APPPATH\Controllers\DetailPasienController.php(3688): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 3688)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas3()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:54:17 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 2038.
+ 1 APPPATH\Controllers\DetailPasienController.php(2038): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 2038)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 03:54:36 --> Undefined array key "biaya355"
+in APPPATH\Controllers\DetailPasienController.php on line 2038.
+ 1 APPPATH\Controllers\DetailPasienController.php(2038): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biaya355"', 'C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\DetailPasienController.php', 2038)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DetailPasienController->kelas2()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPasienController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
+CRITICAL - 2023-09-20 06:20:08 --> syntax error, unexpected token "if", expecting "]"
+in APPPATH\Controllers\InsertCeklistController.php on line 1121.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\app\\Controllers\\InsertCeklistController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\InsertCeklistController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\InsertCeklistController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\InsertCeklistController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp8.2.4\\htdocs\\Clinicalpathway_Ci4\\public\\index.php')
