@@ -36,45 +36,24 @@
                             <?php
                             // Get the selected date (assuming it's in the format 'Y-m-d')
                             $masuk_rs; // Replace this with your selected date
-
                             // Convert the selected date to a DateTime object
                             $dateTime = new DateTime($masuk_rs);
-
                             // Add 6 days to the selected date
                             $exitDate = $dateTime->modify('+6 days');
-
                             // Format the exit date as desired (e.g., 'Y-m-d')
                             $formattedExitDate = $exitDate->format('Y-m-d');
-
                             // echo "Selected Date: $selectedDate<br>";
                             echo "$formattedExitDate";
                             ?>
                         </td>
                         <td style="text-align:center;">
-                            <select class="form-control" id="selectOption" name="dxutama">
-                                <option value="" selected disabled>Pilih DX Medis Utama</option>
-                                <option id="cerebral-infarction" <?= ($dxutama == 'cerebral infarction (i63.9)') ? 'selected' : '' ?> value="cerebral infarction (i63.9)">cerebral infarction (i63.9)</option>
-                                <option id="intracerebral-haemorrhage" <?= ($dxutama == 'intracerebral haemorrhage(I61.9)') ? 'selected' : '' ?> value="intracerebral haemorrhage(I61.9)">intracerebral haemorrhage(I61.9)</option>
-                                <option id="diabetes-melitus" <?= ($dxutama == 'Diabetes Melitus Tipe 2 (E11.9)') ? 'selected' : '' ?> value="Diabetes Melitus Tipe 2 (E11.9)">Diabetes Melitus Tipe 2 (E11.9)</option>
-                                <option id="hipertensi-esensial" <?= ($dxutama == 'Hipertensi Esensial (I10)') ? 'selected' : '' ?> value="Hipertensi Esensial (I10)">Hipertensi Esensial (I10)</option>
-                                <option id="hiv" <?= ($dxutama == 'HIV (B24)') ? 'selected' : '' ?> value="HIV (B24)">HIV (B24)</option>
-                                <option id="tuberculosis" <?= ($dxutama == 'Tuberculosis (A15.2)') ? 'selected' : '' ?> value="Tuberculosis (A15.2)">Tuberculosis (A15.2)</option>
-                                <option id="henti-jantung" <?= ($dxutama == 'Henti Jantung, Cardiac Arrest (I46)') ? 'selected' : '' ?> value="Henti Jantung, Cardiac Arrest (I46)">Henti Jantung, Cardiac Arrest (I46)</option>
-                                <option id="kejang-demam" <?= ($dxutama == 'Kejang Demam (R56.0)') ? 'selected' : '' ?> value="Kejang Demam (R56.0)">Kejang Demam (R56.0)</option>
-                                <option id="perdarahan-post-partum" <?= ($dxutama == 'Perdarahan Post Partum (O72)') ? 'selected' : '' ?> value="Perdarahan Post Partum (O72)">Perdarahan Post Partum (O72)</option>
-                                <option id="pre-eklampsia" <?= ($dxutama == 'Pre Eklampsia (014.9)') ? 'selected' : '' ?> value="Pre Eklampsia (014.9)">Pre Eklampsia (014.9)</option>
-                                <option id="stroke" <?= ($dxutama == 'Stroke') ? 'selected' : '' ?> value="Stroke">Stroke</option>
-                                <!-- <option id=" cerebral-infarction">cerebral infarction (i63.9)</option>
-                                <option id="intracerebral-haemorrhage">intracerebral haemorrhage(I61.9)</option> -->
-                            </select>
-
-                            <input disabled class="form-control" type="text" value="<?= $dxutama ? $dxutama : '' ?>" id="dxutamatext" style="display:none;">
-
+                            <?php echo $dxutama; ?>
+                            <input type="hidden" name="dxutama" value="<?php echo $dxutama; ?>">
                         </td>
 
                         <td style="text-align:center;">
                             <select class="form-control" id="selectOption2" name="dxsekunder">
-                                <option value="" selected>Pilih DX Medis Sekunder</option>
+                                <option id="a" value="a" selected>Pilih DX Medis Sekunder</option>
                                 <option id="hemiplegi" <?= ($dxsekunder == 'hemiplegi(G81)') ? 'selected' : '' ?> value="hemiplegi(G81)">hemiplegi(G81)</option>
                                 <option id="congestive-heart-failure" <?= ($dxsekunder == 'Congestive heart failure (I50.0)') ? 'selected' : '' ?> value="Congestive heart failure (I50.0)">Congestive heart failure (I50.0)</option>
                             </select></th>
@@ -83,10 +62,8 @@
                         </td>
                         <td style="text-align:center;">-</td>
                         <td style="text-align:center;">3</td>
-
                     </tr>
             </table>
-
             <div class="card">
 
                 <!-- /.card-header -->

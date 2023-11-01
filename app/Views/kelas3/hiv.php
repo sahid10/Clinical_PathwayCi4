@@ -56,7 +56,7 @@
 
                         <td style="text-align:center;">
                             <select class="form-control" id="selectOption2" name="dxsekunder">
-                                <option value="" selected>Pilih DX Medis Sekunder</option>
+                                <option id="default" value="default" selected>Pilih DX Medis Sekunder</option>
                                 <option id="hemiplegi" <?= ($dxsekunder == 'hemiplegi(G81)') ? 'selected' : '' ?> value="hemiplegi(G81)">hemiplegi(G81)</option>
                                 <option id="congestive-heart-failure" <?= ($dxsekunder == 'Congestive heart failure (I50.0)') ? 'selected' : '' ?> value="Congestive heart failure (I50.0)">Congestive heart failure (I50.0)</option>
                             </select></th>

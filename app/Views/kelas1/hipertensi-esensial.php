@@ -51,7 +51,7 @@
 
                         <td style="text-align:center;">
                             <select class="form-control" id="selectOption2" name="dxsekunder">
-                                <option id="else" value="a" selected>Pilih DX Medis Sekunder</option>
+                                <option id="a" value="a" selected>Pilih DX Medis Sekunder</option>
                                 <option id="hemiplegi" <?= ($dxsekunder == 'hemiplegi(G81)') ? 'selected' : '' ?> value="hemiplegi(G81)">hemiplegi(G81)</option>
                                 <option id="congestive-heart-failure" <?= ($dxsekunder == 'Congestive heart failure (I50.0)') ? 'selected' : '' ?> value="Congestive heart failure (I50.0)">Congestive heart failure (I50.0)</option>
                             </select></th>
@@ -96,8 +96,8 @@
                                 <td rowspan="5">1</td>
                                 <td rowspan="2">Asesment awal Medis</td>
                                 <td>Dokter IGD</td>
-
-                                <td class="highlighted-cell">
+                                <!-- class="highlighted-cell" -->
+                                <td >
                                     <div class="custom-control custom-checkbox ">
                                         <?php if ($biaya1 == 15000) { ?>
                                             <input class="form-check-input" type="checkbox" id="customCheckbox1a11" name="biaya1" value="15000" onchange="hitungTotal()" checked>
